@@ -1,0 +1,8 @@
+﻿CREATE TABLE [caseFlow].[Status]
+(
+	[Id] INT NOT NULL IDENTITY(1,1),
+	[Title] NVARCHAR(256) NOT NULL,
+	CONSTRAINT PK_Status PRIMARY KEY ([Id])
+)
+GO
+CREATE UNIQUE NONCLUSTERED INDEX IX_Status_Id ON CaseFlow.[Status] ([Id])

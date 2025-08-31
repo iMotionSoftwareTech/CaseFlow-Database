@@ -8,6 +8,5 @@
 	CONSTRAINT PK_Caseworker PRIMARY KEY ([Id]),
 	CONSTRAINT FK_Caseworker_CaseworkerRole FOREIGN KEY ([CaseworkerRoleId]) REFERENCES [caseFlow].[CaseworkerRole] ([Id])
 )
-
 GO 
-	CREATE UNIQUE NONCLUSTERED INDEX IX_Caseworker_Id on caseFlow.Caseworker([Id])
+	CREATE UNIQUE NONCLUSTERED INDEX IX_Caseworker_Id ON caseFlow.Caseworker([Id])
