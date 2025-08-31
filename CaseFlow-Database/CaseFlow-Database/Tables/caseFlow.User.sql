@@ -10,6 +10,5 @@
 	CONSTRAINT PK_User PRIMARY KEY ([Id]),
 	CONSTRAINT FK_User_Caseworker FOREIGN KEY ([CaseworkerId]) REFERENCES [caseFlow].[Caseworker] ([Id])
 )
-
 GO 
-	CREATE UNIQUE NONCLUSTERED INDEX IX_User_Id on [caseFlow].[User]([Id])
+	CREATE UNIQUE NONCLUSTERED INDEX IX_User_Id ON [caseFlow].[User]([Id])

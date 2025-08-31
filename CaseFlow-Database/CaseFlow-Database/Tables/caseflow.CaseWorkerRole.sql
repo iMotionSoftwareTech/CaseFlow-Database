@@ -6,4 +6,4 @@
 	CONSTRAINT PK_CaseworkerRole PRIMARY KEY ([Id])
 )
 GO 
-	CREATE UNIQUE NONCLUSTERED INDEX IX_CaseworkerRole_Id on [caseFlow].[CaseworkerRole]([Id])
+	CREATE UNIQUE NONCLUSTERED INDEX IX_CaseworkerRole_Id ON [caseFlow].[CaseworkerRole]([Id])
