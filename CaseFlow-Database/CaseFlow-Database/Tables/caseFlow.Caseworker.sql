@@ -6,7 +6,7 @@
 	[Surname] NVARCHAR(256) NOT NULL,
 	[Email] NVARCHAR(256) NOT NULL,
 	CONSTRAINT PK_Caseworker PRIMARY KEY ([Id]),
-	CONSTRAINT FK_Caseworker_CaseworkerRoleId FOREIGN KEY ([CaseworkerRoleId]) REFERENCES [caseFlow].[CaseworkerRole] ([Id])
+	CONSTRAINT FK_Caseworker_CaseworkerRole FOREIGN KEY ([CaseworkerRoleId]) REFERENCES [caseFlow].[CaseworkerRole] ([Id])
 )
 
 GO 
