@@ -23,6 +23,8 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
     <AssemblyOwner>IMotion Software</AssemblyOwner>
+    <DefaultSchema>dbo</DefaultSchema>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -59,8 +61,10 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
     <Folder Include="StoredProcedures" />
+    <Folder Include="Schemas" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="CaseFlow.sql" />
+    <Build Include="Tables\caseflow.CaseWorkerRole.sql" />
+    <Build Include="Schemas\caseflow.sql" />
   </ItemGroup>
 </Project>
