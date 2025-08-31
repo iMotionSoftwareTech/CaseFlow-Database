@@ -69,5 +69,6 @@
     <Build Include="Tables\caseFlow.Caseworker.sql" />
     <Build Include="Tables\caseFlow.User.sql" />
     <Build Include="Tables\caseFlow.Status.sql" />
+    <Build Include="Tables\caseFlow.Task.sql" />
   </ItemGroup>
 </Project>

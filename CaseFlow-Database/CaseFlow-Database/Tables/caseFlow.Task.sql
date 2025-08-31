@@ -1,0 +1,10 @@
+﻿CREATE TABLE [caseFlow].[Task]
+(
+	[Id] INT NOT NULL IDENTITY(1,1),	
+	[Title] NVARCHAR(256) NOT NULL,
+	[Description] NVARCHAR(256) NULL,
+	[DueDateTime] DATETIME2 NOT NULL,
+	CONSTRAINT PK_Task PRIMARY KEY ([Id])
+)
+GO
+	CREATE UNIQUE NONCLUSTERED INDEX IX_Task_Id ON caseFlow.Task ([Id])
