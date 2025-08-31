@@ -64,7 +64,8 @@
     <Folder Include="Schemas" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\caseflow.CaseWorkerRole.sql" />
-    <Build Include="Schemas\caseflow.sql" />
+    <Build Include="Tables\caseFlow.CaseworkerRole.sql" />
+    <Build Include="Schemas\caseFlow.sql" />
+    <Build Include="Tables\caseFlow.Caseworker.sql" />
   </ItemGroup>
 </Project>
