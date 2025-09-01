@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{bc9be1cf-2210-49a7-9e62-acb816ede564}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -62,6 +62,8 @@
     <Folder Include="Tables" />
     <Folder Include="StoredProcedures" />
     <Folder Include="Schemas" />
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\Post-Deploy" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\caseFlow.CaseworkerRole.sql" />
@@ -71,5 +73,8 @@
     <Build Include="Tables\caseFlow.Status.sql" />
     <Build Include="Tables\caseFlow.Task.sql" />
     <Build Include="Tables\caseFlow.TaskStatus.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Post-Deploy\caseFlow.InsertStatuses.sql" />
   </ItemGroup>
 </Project>
