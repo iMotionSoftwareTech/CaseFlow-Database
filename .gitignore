@@ -12,7 +12,15 @@ bin-release/
 *.air
 *.ipa
 *.apk
+*.dbmld
+*.jfm
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+/CaseFlow-Database.Test/CaseFlow-Database.Tests/CaseFlow-Database.Tests.dbmdl
+/CaseFlow-Database.Test/CaseFlow-Database.Tests/CaseFlow-Database.Tests.sqlproj.user
+/CaseFlow-Database/CaseFlow-Database/CaseFlow-Database.dbmdl
+/CaseFlow-Database/CaseFlow-Database/CaseFlow-Database.sqlproj.user
+/CaseFlow-Database/.vs/CaseFlow-Database/FileContentIndex
+/CaseFlow-Database/.vs/CaseFlow-Database/v17
