@@ -73,6 +73,7 @@
     <Build Include="Tables\caseFlow.Status.sql" />
     <Build Include="Tables\caseFlow.Task.sql" />
     <Build Include="Tables\caseFlow.TaskStatus.sql" />
+    <Build Include="StoredProcedures\caseFlow.CreateUser.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Post-Deploy\caseFlow.InsertStatuses.sql" />
