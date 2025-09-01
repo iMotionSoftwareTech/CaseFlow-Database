@@ -70,5 +70,6 @@
     <Build Include="Tables\caseFlow.User.sql" />
     <Build Include="Tables\caseFlow.Status.sql" />
     <Build Include="Tables\caseFlow.Task.sql" />
+    <Build Include="Tables\caseFlow.TaskStatus.sql" />
   </ItemGroup>
 </Project>
