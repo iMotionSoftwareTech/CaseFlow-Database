@@ -64,6 +64,8 @@
     <Folder Include="Schemas" />
     <Folder Include="Scripts" />
     <Folder Include="Scripts\Post-Deploy" />
+    <Folder Include="Scripts\Post-Deploy\Data" />
+    <Folder Include="Scripts\Post-Deploy\Data\StaticData" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\caseFlow.CaseworkerRole.sql" />
@@ -74,8 +76,10 @@
     <Build Include="Tables\caseFlow.Task.sql" />
     <Build Include="Tables\caseFlow.TaskStatus.sql" />
     <Build Include="StoredProcedures\caseFlow.CreateUser.sql" />
+    <None Include="Scripts\Post-Deploy\Data\StaticData\caseFlow.InsertCaseworkerRoles.sql" />
+    <None Include="Scripts\Post-Deploy\Data\StaticData\caseFlow.InsertStatuses.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="Scripts\Post-Deploy\caseFlow.InsertStatuses.sql" />
+    <PostDeploy Include="Scripts\Post-Deploy\caseFlow.PostDeployment.sql" />
   </ItemGroup>
 </Project>

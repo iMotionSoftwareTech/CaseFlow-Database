@@ -9,19 +9,10 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-IF NOT EXISTS (SELECT 1 FROM [caseFlow].[Status])
+IF NOT EXISTS (SELECT 1 FROM [caseFlow].[CaseworkerRole])
 BEGIN     
-    INSERT INTO [caseFlow].[Status] ([Title])
-    VALUES      ('Case Created'),
-                ('Under Review'),
-                ('Hearing Scheduled'),
-                ('Hearing Held'),
-                ('Awaiting Judgement'),
-                ('Order Made'),
-                ('Case Stayed'),
-                ('Case Discontinued'),
-                ('Concluded'),
-                ('Transferred')                
+    INSERT INTO [caseFlow].[CaseworkerRole] ([Name])
+    VALUES      ('Legal Officer'),
+                ('Claims Caseworker'),
+                ('Court Associate')             
 END
-
-PRINT N'Post-deployment script finished successfully.';
