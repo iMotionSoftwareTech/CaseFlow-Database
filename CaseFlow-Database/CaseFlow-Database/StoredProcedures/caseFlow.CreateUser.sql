@@ -19,7 +19,7 @@ BEGIN TRY
 	DECLARE	@caseworkerId	INT,	
 			@userName		NVARCHAR(256);
 
-	SET @username = CONCAT(UPPER(LEFT(@Forename, 1)), @Surname);
+	SET @username = CONCAT(UPPER(LEFT(@forename, 1)), @surname);
 
 	BEGIN TRANSACTION
 		INSERT INTO [caseFlow].[Caseworker] (CaseworkerRoleId, Forename, Surname, Email)
