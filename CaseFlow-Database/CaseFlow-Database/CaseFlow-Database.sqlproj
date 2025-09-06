@@ -66,6 +66,7 @@
     <Folder Include="Scripts\Post-Deploy" />
     <Folder Include="Scripts\Post-Deploy\Data" />
     <Folder Include="Scripts\Post-Deploy\Data\StaticData" />
+    <Folder Include="Types" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\caseFlow.CaseworkerRole.sql" />
@@ -81,6 +82,7 @@
     <Build Include="StoredProcedures\caseFlow.CreateTask.sql" />
     <Build Include="StoredProcedures\caseFlow.UpdateTask.sql" />
     <Build Include="StoredProcedures\caseFlow.GetUser.sql" />
+    <Build Include="Types\dbo.IntList.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Post-Deploy\caseFlow.PostDeployment.sql" />
