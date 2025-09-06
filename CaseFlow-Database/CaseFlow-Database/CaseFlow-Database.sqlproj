@@ -80,6 +80,7 @@
     <None Include="Scripts\Post-Deploy\Data\StaticData\caseFlow.InsertStatuses.sql" />
     <Build Include="StoredProcedures\caseFlow.CreateTask.sql" />
     <Build Include="StoredProcedures\caseFlow.UpdateTask.sql" />
+    <Build Include="StoredProcedures\caseFlow.GetUser.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Post-Deploy\caseFlow.PostDeployment.sql" />
