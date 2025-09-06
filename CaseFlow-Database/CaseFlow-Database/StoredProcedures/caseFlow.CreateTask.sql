@@ -18,7 +18,7 @@ BEGIN TRY
 
 	BEGIN TRANSACTION
 		INSERT INTO [caseFlow].[Task]					(Title, [Description], DueDateTime)
-		OUTPUT											INSERTED.ID INTO @insertedIds
+		OUTPUT											INSERTED.Id INTO @insertedIds
 		VALUES											(@title, @description, @dueDateTime)
 
 		SELECT		@taskId = Id FROM @insertedIds;

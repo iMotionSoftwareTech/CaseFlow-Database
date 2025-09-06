@@ -23,7 +23,7 @@ BEGIN TRY
 
 	BEGIN TRANSACTION
 		INSERT INTO [caseFlow].[Caseworker] (CaseworkerRoleId, Forename, Surname, Email)
-		OUTPUT								INSERTED.ID INTO @insertedIds
+		OUTPUT								INSERTED.Id INTO @insertedIds
 		VALUES								(@caseworkerRoleId, @forename, @surname, @email)
 
 		SELECT		@caseworkerId = Id FROM @insertedIds;
