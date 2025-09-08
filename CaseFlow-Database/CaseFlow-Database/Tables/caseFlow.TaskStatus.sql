@@ -8,7 +8,8 @@
     CONSTRAINT PK_TaskStatus PRIMARY KEY ([Id]),
 	CONSTRAINT FK_TaskStatus_Task FOREIGN KEY ([TaskId]) REFERENCES [caseFlow].[Task] ([Id]),
 	CONSTRAINT FK_TaskStatus_Status FOREIGN KEY ([StatusId]) REFERENCES [caseFlow].[Status] ([Id]),
-	CONSTRAINT FK_TaskStatus_Caseworker FOREIGN KEY ([CaseworkerId]) REFERENCES [caseFlow].[Caseworker] ([Id])
+	CONSTRAINT FK_TaskStatus_Caseworker FOREIGN KEY ([CaseworkerId]) REFERENCES [caseFlow].[Caseworker] ([Id]),
+	CONSTRAINT UQ_TaskStatus_TaskId_StatusId UNIQUE ([TaskId], [StatusId])
 )
 
 GO
