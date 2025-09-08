@@ -80,9 +80,11 @@
     <None Include="Scripts\Post-Deploy\Data\StaticData\caseFlow.InsertCaseworkerRoles.sql" />
     <None Include="Scripts\Post-Deploy\Data\StaticData\caseFlow.InsertStatuses.sql" />
     <Build Include="StoredProcedures\caseFlow.CreateTask.sql" />
-    <Build Include="StoredProcedures\caseFlow.UpdateTask.sql" />
+    <Build Include="StoredProcedures\caseFlow.LogTaskStatus.sql" />
     <Build Include="StoredProcedures\caseFlow.GetUser.sql" />
     <Build Include="Types\dbo.IntList.sql" />
+    <Build Include="StoredProcedures\caseFlow.LogTaskStatuses.sql" />
+    <Build Include="Types\caseFlow.TaskUpdateList.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Post-Deploy\caseFlow.PostDeployment.sql" />

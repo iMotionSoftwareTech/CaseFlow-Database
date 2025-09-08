@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [caseFlow].[UpdateTask]
+﻿CREATE PROCEDURE [caseFlow].[LogTaskStatus]
 	@taskId			INT,
 	@statusId		INT,
 	@caseworkerId	INT,
