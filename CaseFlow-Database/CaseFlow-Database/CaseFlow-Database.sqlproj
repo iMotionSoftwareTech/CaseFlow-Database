@@ -85,7 +85,8 @@
     <Build Include="Types\dbo.IntList.sql" />
     <Build Include="StoredProcedures\caseFlow.LogTaskStatuses.sql" />
     <Build Include="Types\caseFlow.TaskUpdateList.sql" />
-    <Build Include="Tables\caseFlow.GetAllTasks.sql" />
+    <Build Include="StoredProcedures\caseFlow.GetAllTasks.sql" />
+    <Build Include="StoredProcedures\caseFlow.UpdatePasswordAttempt.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Post-Deploy\caseFlow.PostDeployment.sql" />
