@@ -2,7 +2,8 @@
 	@taskId			INT,
 	@statusId		INT,
 	@caseworkerId	INT,
-	@notes			NVARCHAR(256)
+	@notes			NVARCHAR(256),
+	@logDateTime	DATETIME2
 AS
 BEGIN TRY	
 	SET NOCOUNT ON;
@@ -12,8 +13,8 @@ BEGIN TRY
 		THROW 51002, 'Task has already been updated.', 1;
 	
 	
-	INSERT INTO [caseFlow].[TaskStatus]		(TaskId, StatusId, CaseworkerId, Notes)
-	VALUES									(@taskId, @statusId, @caseworkerId, @notes)
+	INSERT INTO [caseFlow].[TaskStatus]		(TaskId, StatusId, CaseworkerId, Notes, LogDateTime)
+	VALUES									(@taskId, @statusId, @caseworkerId, @notes, @logDateTime)
 
 	SET NOCOUNT OFF;
 END TRY

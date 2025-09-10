@@ -5,6 +5,7 @@
 	[StatusId] INT NOT NULL,
 	[CaseworkerId] INT NOT NULL,
 	[Notes] NVARCHAR(256) NULL, 
+	[LogDateTime] DATETIME2 NOT NULL,
     CONSTRAINT PK_TaskStatus PRIMARY KEY ([Id]),
 	CONSTRAINT FK_TaskStatus_Task FOREIGN KEY ([TaskId]) REFERENCES [caseFlow].[Task] ([Id]),
 	CONSTRAINT FK_TaskStatus_Status FOREIGN KEY ([StatusId]) REFERENCES [caseFlow].[Status] ([Id]),

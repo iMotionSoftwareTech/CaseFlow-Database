@@ -23,8 +23,8 @@ BEGIN TRY
 
 		SELECT		@taskId = Id FROM @insertedIds;
 
-		INSERT INTO [caseFlow].[TaskStatus]				(TaskId, StatusId, CaseworkerId)
-		SELECT											@taskId, s.Id, @caseworkerId
+		INSERT INTO [caseFlow].[TaskStatus]				(TaskId, StatusId, CaseworkerId, Notes, LogDateTime)
+		SELECT											@taskId, s.Id, @caseworkerId, '', GETDATE()
 												FROM	[caseFlow].[Status] s
 												WHERE	Title = @caseCreatedStatus
 	COMMIT TRANSACTION
