@@ -5,8 +5,8 @@ AS
 BEGIN
 	SET NOCOUNT ON;
 
-	INSERT INTO [caseFlow].[TaskStatus] (TaskId, StatusId, CaseworkerId, [Notes])
-	SELECT								tu.TaskId, tu.StatusId, @caseworkerId, tu.Notes
+	INSERT INTO [caseFlow].[TaskStatus] (TaskId, StatusId, CaseworkerId, [Notes], LogDateTime)
+	SELECT								tu.TaskId, tu.StatusId, @caseworkerId, tu.Notes, tu.LogDateTime
 	FROM		@taskToUpdate tu
 	
 END
