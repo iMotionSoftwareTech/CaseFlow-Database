@@ -87,7 +87,9 @@
     <Build Include="Types\caseFlow.TaskUpdateList.sql" />
     <Build Include="StoredProcedures\caseFlow.GetAllTasks.sql" />
     <Build Include="StoredProcedures\caseFlow.UpdatePasswordAttempt.sql" />
-    <Build Include="StoredProcedures\caseFlow.GetTaskWithStatusedById.sql" />
+    <Build Include="StoredProcedures\caseFlow.GetTaskWithStatusesById.sql" />
+    <Build Include="StoredProcedures\caseFlow.CreateRole.sql" />
+    <Build Include="StoredProcedures\caseFlow.GetAllRoles.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Post-Deploy\caseFlow.PostDeployment.sql" />

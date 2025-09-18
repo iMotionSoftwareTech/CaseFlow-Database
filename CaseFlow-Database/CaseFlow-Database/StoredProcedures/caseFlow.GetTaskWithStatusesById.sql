@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [caseFlow].[GetTaskWithStatusedById]
+﻿CREATE PROCEDURE [caseFlow].[GetTaskWithStatusesById]
 	@taskId		INT
 AS
 BEGIN
