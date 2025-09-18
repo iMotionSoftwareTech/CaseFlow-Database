@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="CheckTaskCreation.Configuration" xml:space="preserve">
+    <value>Press to configure</value>
+  </metadata>
+  <data name="CheckTaskCreation.Schema" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAE5TeXN0ZW0uRGF0YSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJl
+        PW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABNTeXN0ZW0uRGF0YS5E
+        YXRhU2V0AwAAABdEYXRhU2V0LlJlbW90aW5nVmVyc2lvbglYbWxTY2hlbWELWG1sRGlmZkdyYW0DAQEO
+        U3lzdGVtLlZlcnNpb24CAAAACQMAAAAGBAAAALULPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0i
+        dXRmLTE2Ij8+DQo8eHM6c2NoZW1hIGlkPSJOZXdEYXRhU2V0IiB4bWxucz0iIiB4bWxuczp4cz0iaHR0
+        cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOm1zZGF0YT0idXJuOnNjaGVtYXMtbWlj
+        cm9zb2Z0LWNvbTp4bWwtbXNkYXRhIj4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iTmV3RGF0YVNldCIgbXNk
+        YXRhOklzRGF0YVNldD0idHJ1ZSIgbXNkYXRhOkxvY2FsZT0iZW4tR0IiPg0KICAgIDx4czpjb21wbGV4
+        VHlwZT4NCiAgICAgIDx4czpjaG9pY2UgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCI+
+        DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IlRhYmxlIj4NCiAgICAgICAgICA8eHM6Y29tcGxleFR5
+        cGU+DQogICAgICAgICAgICA8eHM6c2VxdWVuY2U+DQogICAgICAgICAgICAgIDx4czplbGVtZW50IG5h
+        bWU9IlRpdGxlIiB0eXBlPSJ4czpzdHJpbmciIG1zZGF0YTp0YXJnZXROYW1lc3BhY2U9IiIgbWluT2Nj
+        dXJzPSIwIiAvPg0KICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJEZXNjcmlwdGlvbiIgdHlw
+        ZT0ieHM6c3RyaW5nIiBtc2RhdGE6dGFyZ2V0TmFtZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIgLz4NCiAg
+        ICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iRHVlRGF0ZVRpbWUiIHR5cGU9InhzOmRhdGVUaW1l
+        IiBtc2RhdGE6dGFyZ2V0TmFtZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgIDwv
+        eHM6c2VxdWVuY2U+DQogICAgICAgICAgPC94czpjb21wbGV4VHlwZT4NCiAgICAgICAgPC94czplbGVt
+        ZW50Pg0KICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJUYWJsZTEiPg0KICAgICAgICAgIDx4czpjb21w
+        bGV4VHlwZT4NCiAgICAgICAgICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgICAgICAgICAgPHhzOmVsZW1l
+        bnQgbmFtZT0iVGFza0lkIiB0eXBlPSJ4czppbnQiIG1zZGF0YTp0YXJnZXROYW1lc3BhY2U9IiIgbWlu
+        T2NjdXJzPSIwIiAvPg0KICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJTdGF0dXNJZCIgdHlw
+        ZT0ieHM6aW50IiBtc2RhdGE6dGFyZ2V0TmFtZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAg
+        ICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iQ2FzZXdvcmtlcklkIiB0eXBlPSJ4czppbnQiIG1zZGF0
+        YTp0YXJnZXROYW1lc3BhY2U9IiIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgICAgICAgICA8eHM6ZWxl
+        bWVudCBuYW1lPSJUaXRsZSIgdHlwZT0ieHM6c3RyaW5nIiBtc2RhdGE6dGFyZ2V0TmFtZXNwYWNlPSIi
+        IG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgIDwveHM6c2VxdWVuY2U+DQogICAgICAgICAgPC94
+        czpjb21wbGV4VHlwZT4NCiAgICAgICAgPC94czplbGVtZW50Pg0KICAgICAgPC94czpjaG9pY2U+DQog
+        ICAgPC94czpjb21wbGV4VHlwZT4NCiAgPC94czplbGVtZW50Pg0KPC94czpzY2hlbWE+BgUAAACAATxk
+        aWZmZ3I6ZGlmZmdyYW0geG1sbnM6bXNkYXRhPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOnhtbC1t
+        c2RhdGEiIHhtbG5zOmRpZmZncj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp4bWwtZGlmZmdyYW0t
+        djEiIC8+BAMAAAAOU3lzdGVtLlZlcnNpb24EAAAABl9NYWpvcgZfTWlub3IGX0J1aWxkCV9SZXZpc2lv
+        bgAAAAAICAgIAgAAAAAAAAD//////////ws=
+</value>
+  </data>
+  <data name="CreateCaseTask_SucceedsWithValidData_TestAction.SqlScript" xml:space="preserve">
+    <value>/*
+Add SQL statements here to exercise the database object 
+that you want to test.
+
+To test a stored procedure, invoke it here by adding 
+an EXEC statement that has appropriate parameters.
+
+In the lower pane, you can add test conditions that verify 
+whether the results of your SQL statements match what 
+you expect.
+*/
+DECLARE @insertedIds	TABLE(Id INT); 
+
+DECLARE @caseworkerRoleID	INT
+
+INSERT INTO [caseFlow].[CaseworkerRole] ([Name]) 
+OUTPUT								INSERTED.Id INTO @insertedIds
+VALUES ('TestRole');
+
+SELECT		@caseworkerRoleID = Id FROM @insertedIds;
+
+EXEC	[caseFlow].[CreateUser]
+		@caseworkerRoleId = @caseworkerRoleID,
+		@forename = N'Jayne',
+		@surname = N'Smith',
+		@email = N'j.smith@hmcts.org.uk',
+		@passwordHash = 0x195ef50eef7c03f24389b68b74d3ab7d19d7d55ba671b50c4a332fe10ffb7e850493068575c0f515da302babe51a134f4c862d2f0025b91b3545a993420bcdb6,
+		@passwordSalt =  0x31b2ecfac603e147af72104bd4688465,
+		@createdDateTime = '2025-09-07 22:02:00';
+
+INSERT INTO [caseFlow].[Status] (Title) 
+VALUES		('Case Created');
+
+DECLARE @workerId INT;
+
+SELECT TOP 1 @workerId = Id
+FROM [caseFlow].[Caseworker]
+ORDER BY Id DESC
+
+EXEC [caseFlow].[CreateTask]
+	 @caseworkerId = @workerId,
+	 @title = N'Test Task',
+	 @description = N'Test Description',
+	 @dueDateTime = '2025-10-01 18:00:00';
+
+-- Validate the results
+SELECT Title, [Description], DueDateTime FROM [caseFlow].[Task];
+
+SELECT ts.TaskId, ts.StatusId, ts.CaseworkerId, s.Title
+FROM [caseFlow].[TaskStatus] ts
+JOIN [caseFlow].[Task] t ON t.Id = ts.TaskId
+JOIN [caseFlow].[Status] s ON s.Id = ts.StatusId;</value>
+  </data>
+  <data name="CreateCaseTask_SucceedsWithValidData_PosttestAction.SqlScript" xml:space="preserve">
+    <value>/*
+Add SQL statements here that you want to run after 
+the test script is run.
+
+In the lower pane, you can add test conditions that verify 
+whether the results of your SQL statements match what 
+you expect.
+*/
+DELETE FROM [caseFlow].[TaskStatus]
+DELETE FROM [caseFlow].[Task]
+DELETE FROM [caseFlow].[User]
+DELETE FROM [caseFLow].[Caseworker]
+DELETE FROM [caseFLow].[CaseworkerRole]</value>
+  </data>
+  <metadata name="CheCkDuplicationTaskException.Configuration" xml:space="preserve">
+    <value>Press to configure</value>
+  </metadata>
+  <data name="CheCkDuplicationTaskException.Schema" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAE5TeXN0ZW0uRGF0YSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJl
+        PW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABNTeXN0ZW0uRGF0YS5E
+        YXRhU2V0AwAAABdEYXRhU2V0LlJlbW90aW5nVmVyc2lvbglYbWxTY2hlbWELWG1sRGlmZkdyYW0DAQEO
+        U3lzdGVtLlZlcnNpb24CAAAACQMAAAAGBAAAAPYGPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0i
+        dXRmLTE2Ij8+DQo8eHM6c2NoZW1hIGlkPSJOZXdEYXRhU2V0IiB4bWxucz0iIiB4bWxuczp4cz0iaHR0
+        cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOm1zZGF0YT0idXJuOnNjaGVtYXMtbWlj
+        cm9zb2Z0LWNvbTp4bWwtbXNkYXRhIj4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iTmV3RGF0YVNldCIgbXNk
+        YXRhOklzRGF0YVNldD0idHJ1ZSIgbXNkYXRhOkxvY2FsZT0iZW4tR0IiPg0KICAgIDx4czpjb21wbGV4
+        VHlwZT4NCiAgICAgIDx4czpjaG9pY2UgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCI+
+        DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IlRhYmxlIj4NCiAgICAgICAgICA8eHM6Y29tcGxleFR5
+        cGU+DQogICAgICAgICAgICA8eHM6c2VxdWVuY2U+DQogICAgICAgICAgICAgIDx4czplbGVtZW50IG5h
+        bWU9IkVycm9yTnVtYmVyIiB0eXBlPSJ4czppbnQiIG1zZGF0YTp0YXJnZXROYW1lc3BhY2U9IiIgbWlu
+        T2NjdXJzPSIwIiAvPg0KICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJFcnJvck1lc3NhZ2Ui
+        IHR5cGU9InhzOnN0cmluZyIgbXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+
+        DQogICAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9IkVycm9yU3RhdGUiIHR5cGU9InhzOmludCIg
+        bXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgICAgICA8L3hz
+        OnNlcXVlbmNlPg0KICAgICAgICAgIDwveHM6Y29tcGxleFR5cGU+DQogICAgICAgIDwveHM6ZWxlbWVu
+        dD4NCiAgICAgIDwveHM6Y2hvaWNlPg0KICAgIDwveHM6Y29tcGxleFR5cGU+DQogIDwveHM6ZWxlbWVu
+        dD4NCjwveHM6c2NoZW1hPgYFAAAAgAE8ZGlmZmdyOmRpZmZncmFtIHhtbG5zOm1zZGF0YT0idXJuOnNj
+        aGVtYXMtbWljcm9zb2Z0LWNvbTp4bWwtbXNkYXRhIiB4bWxuczpkaWZmZ3I9InVybjpzY2hlbWFzLW1p
+        Y3Jvc29mdC1jb206eG1sLWRpZmZncmFtLXYxIiAvPgQDAAAADlN5c3RlbS5WZXJzaW9uBAAAAAZfTWFq
+        b3IGX01pbm9yBl9CdWlsZAlfUmV2aXNpb24AAAAACAgICAIAAAAAAAAA//////////8L
+</value>
+  </data>
+  <data name="CreateCaseTask_ThrowOnDuplicateTestCreation_TestAction.SqlScript" xml:space="preserve">
+    <value>/*
+Add SQL statements here to exercise the database object 
+that you want to test.
+
+To test a stored procedure, invoke it here by adding 
+an EXEC statement that has appropriate parameters.
+
+In the lower pane, you can add test conditions that verify 
+whether the results of your SQL statements match what 
+you expect.
+*/
+BEGIN TRY
+	DECLARE @insertedIds	TABLE(Id INT); 
+
+	DECLARE @caseworkerRoleID	INT
+
+	INSERT INTO [caseFlow].[CaseworkerRole] ([Name]) 
+	OUTPUT								INSERTED.Id INTO @insertedIds
+	VALUES ('TestRole');
+
+	SELECT		@caseworkerRoleID = Id FROM @insertedIds;
+
+	EXEC [caseFlow].[CreateUser]
+		@caseworkerRoleId = @caseworkerRoleID,
+		@forename = N'Bob',
+		@surname = N'Wilkins',
+		@email = N'b.wilkins@hmcts.org.uk',
+		@passwordHash = 0x403a0ffef6ee5e531be578ebc64d8a94e1b4e0c0ae72421818203e8582d18a53c529725fbb927f0a0b6d37ba03718549a4a60ee49a95e06351a51184b484d0ba,
+		@passwordSalt =  0xa9d23669e033b491dd76dabf532f5294,
+		@createdDateTime = '2025-09-07 22:02:00'
+
+	INSERT INTO [caseFlow].[Status] (Title) 
+	VALUES		('Case Created');
+
+	INSERT INTO [caseFlow].[Task] (Title, [Description], DueDateTime)
+	VALUES ('Duplicate Task', 'Initial data.', '2025-10-01 11:00:00');
+
+	EXEC [caseFlow].[CreateTask]
+		@caseworkerId = 1,
+		@title = N'Duplicate Task',
+		@description = N'Initial data',
+		@dueDateTime = '2025-10-01 11:00:00';
+
+		-- If the execution gets to this point, it means the
+	-- procedure did NOT throw the expected error. We should fail the test.
+	SELECT 1 AS TestResult;
+
+END TRY
+BEGIN CATCH
+	-- If we land in the CATCH block, the procedure worked correctly.
+	-- We return the error details as a result set for validation.
+	SELECT
+		ERROR_NUMBER() AS ErrorNumber,
+		ERROR_MESSAGE() AS ErrorMessage,
+		ERROR_STATE() AS ErrorState;
+END CATCH</value>
+  </data>
+  <data name="CreateCaseTask_ThrowOnDuplicateTestCreation_PosttestAction.SqlScript" xml:space="preserve">
+    <value>/*
+Add SQL statements here that you want to run after 
+the test script is run.
+
+In the lower pane, you can add test conditions that verify 
+whether the results of your SQL statements match what 
+you expect.
+*/
+DELETE FROM [caseFlow].[TaskStatus]
+DELETE FROM [caseFlow].[Task]
+DELETE FROM [caseFlow].[User]
+DELETE FROM [caseFLow].[Caseworker]
+DELETE FROM [caseFLow].[CaseworkerRole]</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>
