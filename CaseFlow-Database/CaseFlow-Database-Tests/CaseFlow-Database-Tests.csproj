@@ -170,6 +170,18 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="UnitTests\GetUserTests.cs">
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="UnitTests\GetTaskWithStatusesByIdTests.cs">
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="UnitTests\GetAllRolesTests.cs">
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="UnitTests\CreateRoleTests.cs">
+      <SubType>Designer</SubType>
+    </Compile>
     <Compile Include="UnitTests\GetAllTasksTests.cs">
       <SubType>Designer</SubType>
     </Compile>
@@ -189,12 +201,25 @@
   <ItemGroup>
     <EmbeddedResource Include="UnitTests\CreateCaseTaskTests.resx">
       <DependentUpon>CreateCaseTaskTests.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitTests\CreateRoleTests.resx">
+      <DependentUpon>CreateRoleTests.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UnitTests\CreateUserTests.resx">
       <DependentUpon>CreateUserTests.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UnitTests\GetAllRolesTests.resx">
+      <DependentUpon>GetAllRolesTests.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UnitTests\GetAllTasksTests.resx">
       <DependentUpon>GetAllTasksTests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitTests\GetTaskWithStatusesByIdTests.resx">
+      <DependentUpon>GetTaskWithStatusesByIdTests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitTests\GetUserTests.resx">
+      <DependentUpon>GetUserTests.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
