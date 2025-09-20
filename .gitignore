@@ -28,3 +28,7 @@ bin-release/
 /CaseFlow-Database/.vs/CaseFlow-Database/CopilotIndices/17.14.786.1071/SemanticSymbols.db
 /CaseFlow-Database/CaseFlow-Database-Tests/.vs/CaseFlow-Database-Tests.csproj.dtbcache.json
 /CaseFlow-Database/packages
+/CaseFlow-Database/.vs/CaseFlow-Database/CopilotIndices/17.14.786.1071/CodeChunks.db-shm
+/CaseFlow-Database/.vs/CaseFlow-Database/CopilotIndices/17.14.786.1071/CodeChunks.db-wal
+/CaseFlow-Database/.vs/CaseFlow-Database/CopilotIndices/17.14.786.1071/SemanticSymbols.db-shm
+/CaseFlow-Database/.vs/CaseFlow-Database/CopilotIndices/17.14.786.1071/SemanticSymbols.db-wal
