@@ -7,7 +7,8 @@
 	[PasswordSalt] VARBINARY(64) NOT NULL,
 	[CreatedAt] DATETIME2 NOT NULL,
 	[IsLocked] BIT NOT NULL DEFAULT 0,
-	CONSTRAINT PK_User PRIMARY KEY ([Id]),
+	[PasswordAttempt] INT NOT NULL DEFAULT 0, 
+    CONSTRAINT PK_User PRIMARY KEY ([Id]),
 	CONSTRAINT FK_User_Caseworker FOREIGN KEY ([CaseworkerId]) REFERENCES [caseFlow].[Caseworker] ([Id])
 )
 GO 

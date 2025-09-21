@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="5ce4f50c-768b-40fd-a97f-eb21682eb449" ChangeDateTime="09/10/2025 13:37:24">
+    <Property Name="ElementName" Value="[caseFlow].[TaskStatus].[LogDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[caseFlow].[TaskStatus]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LogDateTime" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1ba76c56-4f2d-4bda-88fe-d56bb1926cce" ChangeDateTime="09/12/2025 08:14:25">
+    <Property Name="ElementName" Value="[caseFlow].[GetTaskWithStatusedById]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[caseFlow]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[GetTaskWithStatusesById]" />
+  </Operation>
+</Operations>

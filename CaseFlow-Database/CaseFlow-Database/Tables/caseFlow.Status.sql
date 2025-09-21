@@ -5,4 +5,4 @@
 	CONSTRAINT PK_Status PRIMARY KEY ([Id])
 )
 GO
-CREATE UNIQUE NONCLUSTERED INDEX IX_Status_Id ON CaseFlow.[Status] ([Id])
+CREATE UNIQUE NONCLUSTERED INDEX IX_Status_Id ON [caseFlow].[Status] ([Id])
