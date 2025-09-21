@@ -77,7 +77,6 @@
     <Build Include="Tables\caseFlow.Task.sql" />
     <Build Include="Tables\caseFlow.TaskStatus.sql" />
     <Build Include="StoredProcedures\caseFlow.CreateUser.sql" />
-    <None Include="Scripts\Post-Deploy\Data\StaticData\caseFlow.InsertCaseworkerRoles.sql" />
     <None Include="Scripts\Post-Deploy\Data\StaticData\caseFlow.InsertStatuses.sql" />
     <Build Include="StoredProcedures\caseFlow.CreateTask.sql" />
     <Build Include="StoredProcedures\caseFlow.LogTaskStatus.sql" />
@@ -90,6 +89,7 @@
     <Build Include="StoredProcedures\caseFlow.GetTaskWithStatusesById.sql" />
     <Build Include="StoredProcedures\caseFlow.CreateRole.sql" />
     <Build Include="StoredProcedures\caseFlow.GetAllRoles.sql" />
+    <Build Include="StoredProcedures\caseFlow.GetAllStatuses.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Post-Deploy\caseFlow.PostDeployment.sql" />
