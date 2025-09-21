@@ -2,7 +2,6 @@
 Post-Deployment Script for all data and configuration
 */
 
- :r .\Data\StaticData\caseFlow.InsertCaseworkerRoles.sql
  :r .\Data\StaticData\caseFlow.InsertStatuses.sql
 
 GO
