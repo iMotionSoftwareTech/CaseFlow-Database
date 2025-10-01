@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [caseFlow].[UpdateTasks]
+﻿CREATE PROCEDURE [caseFlow].[LogTaskStatuses]
 	@taskToUpdate	TaskUpdateList	READONLY,
 	@caseworkerId	INT
 AS
