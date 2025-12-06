@@ -84,16 +84,16 @@ namespace CaseFlow_Database_Tests
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateCaseTaskTests));
             Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction CreateCaseTask_SucceedsWithValidData_PosttestAction;
             Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction CreateCaseTask_ThrowOnDuplicateTestCreation_TestAction;
-            Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction CreateCaseTask_ThrowOnDuplicateTestCreation_PosttestAction;
             Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ExpectedSchemaCondition CheCkDuplicationTaskException;
+            Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction CreateCaseTask_ThrowOnDuplicateTestCreation_PosttestAction;
             this.CreateCaseTask_SucceedsWithValidDataData = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestActions();
             this.CreateCaseTask_ThrowOnDuplicateTestCreationData = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestActions();
             CreateCaseTask_SucceedsWithValidData_TestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
             CheckTaskCreation = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ExpectedSchemaCondition();
             CreateCaseTask_SucceedsWithValidData_PosttestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
             CreateCaseTask_ThrowOnDuplicateTestCreation_TestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
-            CreateCaseTask_ThrowOnDuplicateTestCreation_PosttestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
             CheCkDuplicationTaskException = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ExpectedSchemaCondition();
+            CreateCaseTask_ThrowOnDuplicateTestCreation_PosttestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
             // 
             // CreateCaseTask_SucceedsWithValidData_TestAction
             // 
@@ -116,6 +116,13 @@ namespace CaseFlow_Database_Tests
             CreateCaseTask_ThrowOnDuplicateTestCreation_TestAction.Conditions.Add(CheCkDuplicationTaskException);
             resources.ApplyResources(CreateCaseTask_ThrowOnDuplicateTestCreation_TestAction, "CreateCaseTask_ThrowOnDuplicateTestCreation_TestAction");
             // 
+            // CheCkDuplicationTaskException
+            // 
+            CheCkDuplicationTaskException.Enabled = true;
+            CheCkDuplicationTaskException.Name = "CheCkDuplicationTaskException";
+            resources.ApplyResources(CheCkDuplicationTaskException, "CheCkDuplicationTaskException");
+            CheCkDuplicationTaskException.Verbose = false;
+            // 
             // CreateCaseTask_ThrowOnDuplicateTestCreation_PosttestAction
             // 
             resources.ApplyResources(CreateCaseTask_ThrowOnDuplicateTestCreation_PosttestAction, "CreateCaseTask_ThrowOnDuplicateTestCreation_PosttestAction");
@@ -131,13 +138,6 @@ namespace CaseFlow_Database_Tests
             this.CreateCaseTask_ThrowOnDuplicateTestCreationData.PosttestAction = CreateCaseTask_ThrowOnDuplicateTestCreation_PosttestAction;
             this.CreateCaseTask_ThrowOnDuplicateTestCreationData.PretestAction = null;
             this.CreateCaseTask_ThrowOnDuplicateTestCreationData.TestAction = CreateCaseTask_ThrowOnDuplicateTestCreation_TestAction;
-            // 
-            // CheCkDuplicationTaskException
-            // 
-            CheCkDuplicationTaskException.Enabled = true;
-            CheCkDuplicationTaskException.Name = "CheCkDuplicationTaskException";
-            resources.ApplyResources(CheCkDuplicationTaskException, "CheCkDuplicationTaskException");
-            CheCkDuplicationTaskException.Verbose = false;
         }
 
         #endregion
