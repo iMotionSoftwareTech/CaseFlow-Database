@@ -84,18 +84,18 @@ namespace CaseFlow_Database_Tests
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateRoleTests));
             Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction CreateRole_SuccessfulCreation_Test_PosttestAction;
             Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction CreateRole_Throw_OnDuplicationCreation_Test_TestAction;
+            Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ExpectedSchemaCondition CheckDuplicateRoleError;
             Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction CreateRole_Throw_OnDuplicationCreation_Test_PretestAction;
             Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction CreateRole_Throw_OnDuplicationCreation_Test_PosttestAction;
-            Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ExpectedSchemaCondition CheckDuplicateRoleError;
             this.CreateRole_SuccessfulCreation_TestData = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestActions();
             this.CreateRole_Throw_OnDuplicationCreation_TestData = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestActions();
             CreateRole_SuccessfulCreation_Test_TestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
             CheckRoleCreation = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ExpectedSchemaCondition();
             CreateRole_SuccessfulCreation_Test_PosttestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
             CreateRole_Throw_OnDuplicationCreation_Test_TestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
+            CheckDuplicateRoleError = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ExpectedSchemaCondition();
             CreateRole_Throw_OnDuplicationCreation_Test_PretestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
             CreateRole_Throw_OnDuplicationCreation_Test_PosttestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
-            CheckDuplicateRoleError = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ExpectedSchemaCondition();
             // 
             // CreateRole_SuccessfulCreation_Test_TestAction
             // 
@@ -118,6 +118,13 @@ namespace CaseFlow_Database_Tests
             CreateRole_Throw_OnDuplicationCreation_Test_TestAction.Conditions.Add(CheckDuplicateRoleError);
             resources.ApplyResources(CreateRole_Throw_OnDuplicationCreation_Test_TestAction, "CreateRole_Throw_OnDuplicationCreation_Test_TestAction");
             // 
+            // CheckDuplicateRoleError
+            // 
+            CheckDuplicateRoleError.Enabled = true;
+            CheckDuplicateRoleError.Name = "CheckDuplicateRoleError";
+            resources.ApplyResources(CheckDuplicateRoleError, "CheckDuplicateRoleError");
+            CheckDuplicateRoleError.Verbose = false;
+            // 
             // CreateRole_Throw_OnDuplicationCreation_Test_PretestAction
             // 
             resources.ApplyResources(CreateRole_Throw_OnDuplicationCreation_Test_PretestAction, "CreateRole_Throw_OnDuplicationCreation_Test_PretestAction");
@@ -137,13 +144,6 @@ namespace CaseFlow_Database_Tests
             this.CreateRole_Throw_OnDuplicationCreation_TestData.PosttestAction = CreateRole_Throw_OnDuplicationCreation_Test_PosttestAction;
             this.CreateRole_Throw_OnDuplicationCreation_TestData.PretestAction = CreateRole_Throw_OnDuplicationCreation_Test_PretestAction;
             this.CreateRole_Throw_OnDuplicationCreation_TestData.TestAction = CreateRole_Throw_OnDuplicationCreation_Test_TestAction;
-            // 
-            // CheckDuplicateRoleError
-            // 
-            CheckDuplicateRoleError.Enabled = true;
-            CheckDuplicateRoleError.Name = "CheckDuplicateRoleError";
-            resources.ApplyResources(CheckDuplicateRoleError, "CheckDuplicateRoleError");
-            CheckDuplicateRoleError.Verbose = false;
         }
 
         #endregion

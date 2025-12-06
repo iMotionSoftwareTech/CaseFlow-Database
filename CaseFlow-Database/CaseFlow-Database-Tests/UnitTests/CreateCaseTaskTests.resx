@@ -185,7 +185,10 @@ EXEC	[caseFlow].[CreateUser]
 		@email = N'j.smith@hmcts.org.uk',
 		@passwordHash = 0x195ef50eef7c03f24389b68b74d3ab7d19d7d55ba671b50c4a332fe10ffb7e850493068575c0f515da302babe51a134f4c862d2f0025b91b3545a993420bcdb6,
 		@passwordSalt =  0x31b2ecfac603e147af72104bd4688465,
-		@createdDateTime = '2025-09-07 22:02:00';
+		@createdDateTime = '2025-09-07 22:02:00',
+		@success = NULL,
+		@caseworkerId = NULL,
+		@errorMessage = NULL;
 
 INSERT INTO [caseFlow].[Status] (Title) 
 VALUES		('Case Created');
@@ -200,7 +203,10 @@ EXEC [caseFlow].[CreateTask]
 	 @caseworkerId = @workerId,
 	 @title = N'Test Task',
 	 @description = N'Test Description',
-	 @dueDateTime = '2025-10-01 18:00:00';
+	 @dueDateTime = '2025-10-01 18:00:00',
+	 @success = NULL,
+	 @taskId = NULL,
+	 @errorMessage = NULL;
 
 -- Validate the results
 SELECT Title, [Description], DueDateTime FROM [caseFlow].[Task];
@@ -228,32 +234,6 @@ DELETE FROM [caseFLow].[CaseworkerRole]</value>
   <metadata name="CheCkDuplicationTaskException.Configuration" xml:space="preserve">
     <value>Press to configure</value>
   </metadata>
-  <data name="CheCkDuplicationTaskException.Schema" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAE5TeXN0ZW0uRGF0YSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJl
-        PW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABNTeXN0ZW0uRGF0YS5E
-        YXRhU2V0AwAAABdEYXRhU2V0LlJlbW90aW5nVmVyc2lvbglYbWxTY2hlbWELWG1sRGlmZkdyYW0DAQEO
-        U3lzdGVtLlZlcnNpb24CAAAACQMAAAAGBAAAAPYGPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0i
-        dXRmLTE2Ij8+DQo8eHM6c2NoZW1hIGlkPSJOZXdEYXRhU2V0IiB4bWxucz0iIiB4bWxuczp4cz0iaHR0
-        cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOm1zZGF0YT0idXJuOnNjaGVtYXMtbWlj
-        cm9zb2Z0LWNvbTp4bWwtbXNkYXRhIj4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iTmV3RGF0YVNldCIgbXNk
-        YXRhOklzRGF0YVNldD0idHJ1ZSIgbXNkYXRhOkxvY2FsZT0iZW4tR0IiPg0KICAgIDx4czpjb21wbGV4
-        VHlwZT4NCiAgICAgIDx4czpjaG9pY2UgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCI+
-        DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IlRhYmxlIj4NCiAgICAgICAgICA8eHM6Y29tcGxleFR5
-        cGU+DQogICAgICAgICAgICA8eHM6c2VxdWVuY2U+DQogICAgICAgICAgICAgIDx4czplbGVtZW50IG5h
-        bWU9IkVycm9yTnVtYmVyIiB0eXBlPSJ4czppbnQiIG1zZGF0YTp0YXJnZXROYW1lc3BhY2U9IiIgbWlu
-        T2NjdXJzPSIwIiAvPg0KICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJFcnJvck1lc3NhZ2Ui
-        IHR5cGU9InhzOnN0cmluZyIgbXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+
-        DQogICAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9IkVycm9yU3RhdGUiIHR5cGU9InhzOmludCIg
-        bXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgICAgICA8L3hz
-        OnNlcXVlbmNlPg0KICAgICAgICAgIDwveHM6Y29tcGxleFR5cGU+DQogICAgICAgIDwveHM6ZWxlbWVu
-        dD4NCiAgICAgIDwveHM6Y2hvaWNlPg0KICAgIDwveHM6Y29tcGxleFR5cGU+DQogIDwveHM6ZWxlbWVu
-        dD4NCjwveHM6c2NoZW1hPgYFAAAAgAE8ZGlmZmdyOmRpZmZncmFtIHhtbG5zOm1zZGF0YT0idXJuOnNj
-        aGVtYXMtbWljcm9zb2Z0LWNvbTp4bWwtbXNkYXRhIiB4bWxuczpkaWZmZ3I9InVybjpzY2hlbWFzLW1p
-        Y3Jvc29mdC1jb206eG1sLWRpZmZncmFtLXYxIiAvPgQDAAAADlN5c3RlbS5WZXJzaW9uBAAAAAZfTWFq
-        b3IGX01pbm9yBl9CdWlsZAlfUmV2aXNpb24AAAAACAgICAIAAAAAAAAA//////////8L
-</value>
-  </data>
   <data name="CreateCaseTask_ThrowOnDuplicateTestCreation_TestAction.SqlScript" xml:space="preserve">
     <value>/*
 Add SQL statements here to exercise the database object 
@@ -311,6 +291,35 @@ BEGIN CATCH
 		ERROR_MESSAGE() AS ErrorMessage,
 		ERROR_STATE() AS ErrorState;
 END CATCH</value>
+  </data>
+  <metadata name="CheCkDuplicationTaskException.Configuration" xml:space="preserve">
+    <value>Press to configure</value>
+  </metadata>
+  <data name="CheCkDuplicationTaskException.Schema" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAE5TeXN0ZW0uRGF0YSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJl
+        PW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABNTeXN0ZW0uRGF0YS5E
+        YXRhU2V0AwAAABdEYXRhU2V0LlJlbW90aW5nVmVyc2lvbglYbWxTY2hlbWELWG1sRGlmZkdyYW0DAQEO
+        U3lzdGVtLlZlcnNpb24CAAAACQMAAAAGBAAAAPYGPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0i
+        dXRmLTE2Ij8+DQo8eHM6c2NoZW1hIGlkPSJOZXdEYXRhU2V0IiB4bWxucz0iIiB4bWxuczp4cz0iaHR0
+        cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOm1zZGF0YT0idXJuOnNjaGVtYXMtbWlj
+        cm9zb2Z0LWNvbTp4bWwtbXNkYXRhIj4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iTmV3RGF0YVNldCIgbXNk
+        YXRhOklzRGF0YVNldD0idHJ1ZSIgbXNkYXRhOkxvY2FsZT0iZW4tR0IiPg0KICAgIDx4czpjb21wbGV4
+        VHlwZT4NCiAgICAgIDx4czpjaG9pY2UgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCI+
+        DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IlRhYmxlIj4NCiAgICAgICAgICA8eHM6Y29tcGxleFR5
+        cGU+DQogICAgICAgICAgICA8eHM6c2VxdWVuY2U+DQogICAgICAgICAgICAgIDx4czplbGVtZW50IG5h
+        bWU9IkVycm9yTnVtYmVyIiB0eXBlPSJ4czppbnQiIG1zZGF0YTp0YXJnZXROYW1lc3BhY2U9IiIgbWlu
+        T2NjdXJzPSIwIiAvPg0KICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJFcnJvck1lc3NhZ2Ui
+        IHR5cGU9InhzOnN0cmluZyIgbXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+
+        DQogICAgICAgICAgICAgIDx4czplbGVtZW50IG5hbWU9IkVycm9yU3RhdGUiIHR5cGU9InhzOmludCIg
+        bXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgICAgICA8L3hz
+        OnNlcXVlbmNlPg0KICAgICAgICAgIDwveHM6Y29tcGxleFR5cGU+DQogICAgICAgIDwveHM6ZWxlbWVu
+        dD4NCiAgICAgIDwveHM6Y2hvaWNlPg0KICAgIDwveHM6Y29tcGxleFR5cGU+DQogIDwveHM6ZWxlbWVu
+        dD4NCjwveHM6c2NoZW1hPgYFAAAAgAE8ZGlmZmdyOmRpZmZncmFtIHhtbG5zOm1zZGF0YT0idXJuOnNj
+        aGVtYXMtbWljcm9zb2Z0LWNvbTp4bWwtbXNkYXRhIiB4bWxuczpkaWZmZ3I9InVybjpzY2hlbWFzLW1p
+        Y3Jvc29mdC1jb206eG1sLWRpZmZncmFtLXYxIiAvPgQDAAAADlN5c3RlbS5WZXJzaW9uBAAAAAZfTWFq
+        b3IGX01pbm9yBl9CdWlsZAlfUmV2aXNpb24AAAAACAgICAIAAAAAAAAA//////////8L
+</value>
   </data>
   <data name="CreateCaseTask_ThrowOnDuplicateTestCreation_PosttestAction.SqlScript" xml:space="preserve">
     <value>/*

@@ -170,6 +170,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="UnitTests\UpdatePasswordAttemptTests.cs">
+      <SubType>Designer</SubType>
+    </Compile>
+    <Compile Include="UnitTests\LogTaskStatusTests.cs">
+      <SubType>Designer</SubType>
+    </Compile>
     <Compile Include="UnitTests\GetUserTests.cs">
       <SubType>Designer</SubType>
     </Compile>
@@ -208,6 +214,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UnitTests\CreateUserTests.resx">
       <DependentUpon>CreateUserTests.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UnitTests\GetAllRolesTests.resx">
       <DependentUpon>GetAllRolesTests.cs</DependentUpon>
@@ -220,6 +227,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UnitTests\GetUserTests.resx">
       <DependentUpon>GetUserTests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitTests\LogTaskStatusTests.resx">
+      <DependentUpon>LogTaskStatusTests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitTests\UpdatePasswordAttemptTests.resx">
+      <DependentUpon>UpdatePasswordAttemptTests.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
