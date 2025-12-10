@@ -1,7 +1,7 @@
 ﻿CREATE PROCEDURE [caseFlow].[UpdatePasswordAttempt]
 	@caseworkerId		INT,
 	@maxAttempts		INT = 3,
-	@newAttemptCount	INT,
+	@newAttemptCount	INT				OUTPUT,
 	@success			BIT				OUTPUT,
 	@wasLocked			BIT				OUTPUT,	
 	@errorMessage		NVARCHAR(4000)	OUTPUT
