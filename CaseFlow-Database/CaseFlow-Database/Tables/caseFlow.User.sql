@@ -2,7 +2,7 @@
 (
 	[Id] INT NOT NULL IDENTITY(1,1),
 	[CaseworkerId] INT NOT NULL,
-	[Username] NVARCHAR(256) NOT NULL UNIQUE,
+	[Username] NVARCHAR(256) NOT NULL,
 	[PasswordHash] VARBINARY(64) NOT NULL,
 	[PasswordSalt] VARBINARY(64) NOT NULL,
 	[CreatedAt] DATETIME2 NOT NULL,

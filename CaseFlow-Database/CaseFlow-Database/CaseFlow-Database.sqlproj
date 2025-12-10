@@ -67,6 +67,7 @@
     <Folder Include="Scripts\Post-Deploy\Data" />
     <Folder Include="Scripts\Post-Deploy\Data\StaticData" />
     <Folder Include="Types" />
+    <Folder Include="Scripts\Post-Deploy\Data\Configurations" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\caseFlow.CaseworkerRole.sql" />
@@ -93,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Post-Deploy\caseFlow.PostDeployment.sql" />
+    <None Include="Scripts\Post-Deploy\Data\Configurations\caseFlow.ConfigureDatabaseCache.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="CaseFlow-Database.refactorlog" />
